@@ -1,0 +1,361 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@android:color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="top" >
+
+        <TableRow
+            android:id="@+id/inputRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/plainTextInput1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="Input 1:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/input1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="right"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/inputRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/plainTextInput2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:text="Input 2:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/input2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="right"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/resultRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/plainTextResult"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:text="Result:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/numRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/Button7"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="7"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/Button8"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="8"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/Button9"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="9"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/ButtonDivide"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="opClick"
+                android:text="/"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/numRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" >
+
+            <Button
+                android:id="@+id/Button8"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="4"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/Button5"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="5"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/Button6"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="6"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/ButtonMultiply"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="opClick"
+                android:text="*"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/numRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" >
+
+            <Button
+                android:id="@+id/Button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="1"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/Button2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="2"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/Button3"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="3"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/ButtonSubtract"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="opClick"
+                android:text="-"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/numRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/Button0"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="0"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/ButtonPeriod"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="numClick"
+                android:text="."
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/ButtonExponent"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="opClick"
+                android:text="^"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/ButtonAdd"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:onClick="opClick"
+                android:text="+"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/enterRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" >
+
+            <Button
+                android:id="@+id/ButtonEnter"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:minHeight="60dp"
+                android:minWidth="90dp"
+                android:onClick="enterClick"
+                android:text="Enter"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/ButtonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:minHeight="60dip"
+                android:onClick="clear"
+                android:text="Clear"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
