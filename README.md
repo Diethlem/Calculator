@@ -1,6 +1,6 @@
 Calculator
 ==========
-Made by: Greg Krause (Diethlem)
+Made by: Greg Krause
 ==========
 
 Calculator app for android
